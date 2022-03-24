@@ -6,7 +6,6 @@ let btnContainer = document.querySelector('.buttons-container');
 let btns = document.querySelectorAll('button');
 let screenText = document.querySelector('.screen-text');
 let screenTextAfter = document.querySelector('.screen-text-after');
-//Declaration of some global variables
 var nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 var symbols = ['+', '-', '/', 'x', 'RESET', 'DEL', '='];
 var compNums = [];
@@ -58,7 +57,6 @@ function updateSecScreenText(input) {
     screenTextAfter.textContent = secScreenInput;
 }
 
-// ADDS THE NUMBERS AND SYMBOLS TOKENS INTO THEIR RESPECTIVE ARRAYS
 function compute(symbol) {
     isResultCalled = false;
     compNums.push(screenText.textContent);
@@ -179,13 +177,11 @@ document.addEventListener('keydown', function(eventObj) {
         key = "RESET" :
         key = key;    
     btnClicked(key);
-    //adding the clicked styling to whichever button that is clicked through keyboard
     for (let btn of btns) {
         if (btn.textContent == key) {
             btn.classList.toggle('button-clicked');
         }
     }
-    //removing the clicked style on ALL the buttons
     document.addEventListener('keyup', function() {
         for (let btn of btns) {
             btn.classList.remove('button-clicked');
