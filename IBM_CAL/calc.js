@@ -194,32 +194,10 @@ document.addEventListener('keydown', function(eventObj) {
 })
 
 
-// ACCESSING THE BTN CLICKING THROUGH MOUSE CLICK AND PASSING
-// THE BTN AS AN ARG TO A FUNCTION
+
 for (let btn of btns) {
     btn.onclick = function() {
         btnClicked(btn.textContent);
     }
 }
 
-//Theme toggling LIGHT <--> DARK
-themeSwitchContainer.onclick = function() {
-    themeSwitchContainer.children[0].classList.toggle('theme-switch-toggle');
-    themeSwitchContainer.classList.toggle('theme-switch-container-light');
-    background.classList.toggle('background-light');
-    calcTitle.classList.toggle('calc-title-light');
-    screen.classList.toggle('screen-container-light');
-    screen.children[0].classList.toggle('screen-text-light')
-    btnContainer.classList.toggle('buttons-container-light');
-    screenTextAfter.classList.toggle('screen-text-after-light');
-    document.querySelector('.fa-palette').classList.toggle('calc-title-light');
-    document.querySelector('.fa-lightbulb').classList.toggle('fa-display-none');
-    document.querySelector('.fa-moon').classList.toggle('fa-display-none');
-    for (let btn of btns) {
-        btn.classList.contains('unique-btn-dark') ?
-            btn.classList.toggle('unique-btn-light') :
-            btn.classList.contains('equals-light') ?
-            btn.classList.toggle('equals-dark') :
-            btn.classList.toggle('button-light');
-    }
-}
