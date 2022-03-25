@@ -1,3 +1,4 @@
+let themeSwitchContainer = document.getElementById('themeSwitch');
 let background = document.getElementById('background');
 let calcTitle = document.querySelector('.calc-title');
 let screen = document.getElementById('screenContainer');
