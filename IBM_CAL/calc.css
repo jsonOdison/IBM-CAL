@@ -48,12 +48,6 @@
   transition: color 0.5s ease;
 }
 
-.theme-palette {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 .fa-palette {
   position: absolute;
   top: 0;
@@ -62,26 +56,6 @@
   font-size: 1.5em;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
-}
-
-.theme-toggle-btn {
-  position: absolute;
-  background-color: #d93936c4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 50%;
-  right: 1.8em;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 
 .screen-container {

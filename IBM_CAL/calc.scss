@@ -1,4 +1,3 @@
-
 $t1-main-big: #bbecdf;
 $t1-calc-title: #f4fcfd;
 $t1-border-background:#222f3e;
@@ -19,7 +18,6 @@ $t1-upper-screen-div:#0f9473;
     margin: 0px;
     box-sizing: border-box;
 }
-
 .background{
     font-family: 'Spartan', sans-serif;
     height: 100vh;
@@ -29,9 +27,6 @@ $t1-upper-screen-div:#0f9473;
     background-color: $t1-main-big;
     transition: background-color 0.5s ease;
 }
-
-
-
 .calc-container{    
     border-radius:20px 20px 0 0px;
     position: relative;
@@ -50,15 +45,6 @@ $t1-upper-screen-div:#0f9473;
     font-size: 1.2em;    
     transition: color 0.5s ease;
 }
-
-
-
-.theme-palette{ 
-    position: absolute;    
-    height: 100%;
-    width: 100%;
-}
-
 .fa-palette{
     position: absolute;
     top: 0;
@@ -67,20 +53,6 @@ $t1-upper-screen-div:#0f9473;
     font-size: 1.5em;
     transition: color 0.5s ease;
 }
-.theme-toggle-btn{
-    position: absolute;
-    background-color: $t1-toggle-btn;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 50%; 
-    right: 1.8em;    
-    transition: all 0.2s ease-out;
-}
-
-
 .screen-container{
     overflow: hidden;
     background-color: $t1-upper-screen-div;
@@ -92,9 +64,6 @@ $t1-upper-screen-div:#0f9473;
     border-radius: 10px;
     transition: background-color 0.5s ease;
 }
-
-
-
 .screen-text{
     position: absolute;
     right: 0.5em;
@@ -170,9 +139,6 @@ $t1-upper-screen-div:#0f9473;
     box-shadow: inset 2px 2px 5px #555555;
     border: none;
 }
-
-
-
 .equals-dark{
     background-color:$t1-equals;
     color: --t1-num-text-2;
